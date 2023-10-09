@@ -17,6 +17,7 @@ body {
     padding: 20px;
 }
 
+/* Top Panel */
 .top-panel {
     background-color: #44667c;
     text-align: center;
@@ -26,6 +27,7 @@ body {
     color: white;
 }
 
+/* Sidebar */
 .sidebar {
     width: 250px;
     top: 0;
@@ -38,20 +40,16 @@ body {
 
 .sidebar a {
     display: block;
-    align-items: center;
+    text-align: left;
     text-decoration: none;
     color: white;
     padding: 10px 20px;
 }
-
-.sidebar a .fa {
-    margin-right: 50px;
-}
-
 .sidebar a:hover {
     background-color: #444;
 }
 
+/* Sidebar Header */
 .sidebar-header {
     text-align: right;
     margin-right: 20px;
@@ -72,16 +70,65 @@ body {
     font-size: 0.6em;
     color: #d3d3d3;
     line-height: 1.25em;
-    margin: 0.5em 0 0 0;
+    margin-top: 0;
 }
 
-.software-image {
+/* Project Table */
+.project-table {
+    margin: 0 auto;
+}
+
+/* Project */
+.project {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    background-color: #44667c;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    background-color: rosybrown;
+}
+
+.project:hover .project-details {
+    display: block;
+}
+
+.project:hover .project-name {
+    display: none;
+}
+
+/* Project Name */
+.project-name {
+    text-align: center;
+    vertical-align: center;
+}
+
+/* Project Details */
+.project-details {
+    display: none;
+    text-align: center;
+    vertical-align: center;
+    font-size: 16px;
+}
+
+/* Software Image */
+#software img {
     width: 150px;
     height: 100%;
     overflow: hidden;
     margin-right: 30px;
 }
 
+/* Circular Image */
 .circular-image {
     width: 200px;
     height: 200px;
