@@ -37,11 +37,17 @@ body {
 }
 
 .sidebar-link {
-    display: block;
+    display: flex;
     text-align: left;
     text-decoration: none;
     color: white;
     padding: 10px 20px;
+    align-items: center;
+}
+
+.sidebar-link .fa {
+    text-align: center;
+    width: 1em;
 }
 
 .sidebar-link:hover {
