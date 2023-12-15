@@ -5,6 +5,7 @@
         <meta name="description" content="This is my personal portfolio website.">
         <title>Personal Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <link rel="stylesheet" href="stylesheet.css">
     </head>
 
@@ -18,26 +19,31 @@
             <p>Computer Engineer</p>
         </div>
 
-        <a href="#about">
+        <a href="#about" class="sidebar-link">
             <span class="fa fa-user"></span>
             <span>About Me</span>
         </a>
-        <a href="#projects">
+        <a href="#projects" class="sidebar-link">
             <span class="fa fa-th"></span>
             <span>Projects</span>
         </a>
-        <a href="#software">
+        <a href="#software" class="sidebar-link">
             <span class="fa fa-code"></span>
             <span>Software</span>
         </a>
-        <a href="#contact">
-            <span class="fa fa-envelope"></span>
-            <span>Contact Me</span>
-        </a>
-        <a href="Resources/Resume.pdf">
+        <a href="Resources/Resume.pdf" class="sidebar-link">
             <span class="fa fa-file"></span>
             <span>Resume</span>
         </a>
+        
+        <div class="sidebar-footer">
+            <div class="contact-table">
+                <a href="tel:8327075273" class="fa fa-mobile fa-2x"></a>
+                <a href="https://www.linkedin.com/in/troydutton/" class="fa fa-linkedin fa-2x"></a>
+                <a href="https://github.com/Bushvacka" class="fa fa-github fa-2x"></a>
+                <a href="mailto:troydutton@utexas.edu" class="fa fa-envelope fa-2x"></a>
+            </div>
+        </div>
     </div>
 
     <div class="content">
@@ -45,108 +51,123 @@
             <h1>About Me</h1>
             <img class="circular-image" src="Resources/profile.jpg">
             <p>
-                I am an Electrical and Computer Engineering Major with a concentration in Software Engineering at the University of Texas at Austin.<br>
-                I am proficient in Python, C/C++, Java, and more. I am fascinated by the world of software and am always looking to learn more.<br>
+                I'm currently pursuing a Bachelors of Science in Electrical and Computer Engineering at the University of Texas at Austin. 
+                My interests lie in software development and data science, where I hope to apply my skills to solve challenging problems.
             </p>
         </div>
-    
-        
         <div id="projects" class="center">
             <h1>Projects</h1>
+            <p>
+                Here are some of the projects I've worked on. Hover over a project to learn more about it, or click on it to view the source code.
+            </p>
             <table class="project-table">
                 <tr>
                     <td>
-                        <div class="project">
-                            <h1 class="project-name">ASL Identifier</h1>
-                            <div class="project-details">
-                                <p>
-                                    Designed a real-time sign-language recognition algorithm by training a model to classify ASL gestures based on hand landmarks.<br>
-                                    Enhanced model accuracy by extracting hand landmarks from standard ASL datasets using a pre-trained MediaPipe model.
-                                </p>
+                        <a href="https://github.com/Bushvacka/Asli" style="text-decoration: none;">
+                            <div class="project">
+                                <h1 class="project-name">ASL Identifier</h1>
+                                <div class="project-details">
+                                    <p>
+                                        Designed a real-time American Sign Language (ASL) classifier, which accurately matches gestures to their respective letters.<br>
+                                        Enhanced model accuracy by extracting hand landmarks from standard ASL datasets using a pre-trained MediaPipe model.                                        
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </td>
                     <td>
-                        <div class="project">
-                            <h1 class="project-name">Conway's Game of Life</h1>
-                            <div class="project-details">
-                                <p>
-                                    Trained an agent using Deep Q learning to compete in a competitive, two-player version of Conway’s Game of Life.<br>
-                                    Formalized the rules of the game in a TensorFlow environment to enable the agent to be trained using reinforcement learning.                                    
-                                </p>
+                        <a href="https://github.com/Bushvacka/TRAAPR" style="text-decoration: none;">
+                            <div class="project">
+                                <h1 class="project-name">Conway's Game of Life</h1>
+                                <div class="project-details">
+                                    <p >
+                                        Trained an agent using Deep Q learning to compete in a competitive, two-player version of Conway’s Game of Life.<br>
+                                        Formalized the rules of the game in a TensorFlow environment to enable the agent to be trained using reinforcement learning.                                    
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </td>
                     <td>
-                        <div class="project">
-                            <h1 class="project-name">Wordle Solver</h1>
-                            <div class="project-details">
-                                <p>
-                                    Devised an algorithm rooted in information theory, which generates intelligent predictions by analyzing the user guess history.<br>
-                                    Calculated expected information for each guess based on the prob/entropy to select the optimal wordle guess.
-                                </p>
+                        <a href="https://github.com/Bushvacka/Wordle-Solver" style="text-decoration: none;">
+                            <div class="project">
+                                <h1 class="project-name">Wordle Solver</h1>
+                                <div class="project-details">
+                                    <p>
+                                        Devised an algorithm rooted in information theory, which generates intelligent predictions by analyzing the user guess history.<br>
+                                        Calculated expected information for each guess based on the prob/entropy to select the optimal wordle guess.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </td>
                 <tr>
                     <td>
-                        <div class="project">
-                            <h1 class="project-name">Traffic Sign Recognition</h1>
-                            <div class="project-details">
-                                <p>
-                                    Trained a convolutional neural network to classify traffic signs from the German Traffic Sign Recognition Benchmark dataset.<br>
-                                    Optimized model performance by selecting and configuring a CNN architecture and systematically fine-tuning hyperparameters.                                    
-                                </p>
+                        <a href="https://github.com/Bushvacka/CS50" style="text-decoration: none;">
+                            <div class="project">
+                                <h1 class="project-name">Traffic Sign Recognition</h1>
+                                <div class="project-details">
+                                    <p>
+                                        Trained a convolutional neural network to classify traffic signs from the German Traffic Sign Recognition Benchmark dataset.<br>
+                                        Optimized model performance by selecting and configuring a CNN architecture and systematically fine-tuning hyperparameters.                                    
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </td>
                     <td>
-                        <div class="project">
-                            <h1 class="project-name">Side View Mirror</h1>
-                            <div class="project-details">
-                                <p>
-                                    Prototyped a system to automatically detect and remove rainwater from a side-view mirror using pressurized air.<br>
-                                    Interfaced with infrared emitters and receivers using a C++ program to detect water droplets on the mirror surface.                                  
-                                </p>
+                        <a href="https://github.com/Bushvacka/Chess" style="text-decoration: none;">
+                            <div class="project">
+                                <h1 class="project-name">Chess Engine</h1>
+                                <div class="project-details">
+                                    <p>
+                                        Developed a chess engine featuring a Monte Carlo Tree Search (MCTS) algorithm, inspired by DeepMind's AlphaZero paper.<br>
+                                        Trained a neural network to act as a policy predictor using self-play based reinforcement learning and an initial set of GM games.                                                                      
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </td>
                     <td>
-                        <div class="project">
-                            <h1 class="project-name">Heads Up Display</h1>
-                            <div class="project-details">
-                                <p>
-                                    Designed a system to project vehicle speed, collected from the OBD-II port, onto the driver's windshield.<br>
-                                    Optimized motor scan pattern to increase refresh rate and reduce jitter.
-                                </p>
+                        <a href="https://github.com/Bushvacka/H-Suite" style="text-decoration: none;">
+                            <div class="project">
+                                <h1 class="project-name">H-Suite</h1>
+                                <div class="project-details">
+                                    <p>
+                                        Developed a full-stack Hardware as a Service (Haas) proof of concept using Flask and React.<br>
+                                        Implemented user authentication and session management in the backend.<br>
+                                        Created a database interface in Python for data persistence and retrieval.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </td>
                 </tr>
             </table>
         </div>
         
-        
-
         <div id="software" class="center">
             <h1>Software</h1>
-            <table style="margin: 0 auto;">
-                <td><img src="Resources/python.png"></td>
-                <td><img src="Resources/c.png"></td>
-                <td><img src="Resources/c++.png"></td>
-                <td><img src="Resources/java.png"></td>
-                <td><img src="Resources/arduino.png"></td>
-            </table>
-        </div>
-    
-        <div id="contact" class="center">
-            <h1>Contact Me</h1>
-            <a href="tel:8327075273" class="fa fa-phone fa-2x"></a>
-            <a href="https://www.linkedin.com/in/troydutton/" class="fa fa-linkedin fa-2x"></a>
-            <a href="https://github.com/Bushvacka" class="fa fa-github fa-2x"></a>
-            <a href="mailto:troydutton@utexas.edu" class="fa fa-envelope fa-2x"></a>
+            <div class="software-icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-line.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-line.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" />
+            </div>
         </div>
     </div>
-
-
 </html>
